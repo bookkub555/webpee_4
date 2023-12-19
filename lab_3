@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Elements Example</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"], input[type="reset"], input[type="button"], button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, button:hover {
+      background-color: #45a049;
+    }
+
+    input[type="image"] {
+      max-width: 100%;
+      height: auto;
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    legend {
+      color: #333;
+      font-weight: bold;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+  </style>
+</head>
+<body>
+  <h1>Form Elements Example</h1>
+  <form action="/">
+    <label for="text-input">Text:</label>
+    <input type="text" id="text-input" name="text-value" placeholder="Enter your text">
+
+    <label for="radio-1">Option 1:</label>
+    <input type="radio" id="radio-1" name="radio-group" value="1">
+
+    <label for="radio-2">Option 2:</label>
+    <input type="radio" id="radio-2" name="radio-group" value="2">
+
+    <label for="checkbox-1">Checkbox 1:</label>
+    <input type="checkbox" id="checkbox-1" name="checkbox-1" value="on">
+
+    <label for="password-input">Password:</label>
+    <input type="password" id="password-input" name="password-value">
+
+    <input type="hidden" name="hidden-value" value="secret">
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+    <input type="image" src="image.png" alt="Submit">
+
+    <button type="button">Click Me!</button>
+
+    <label for="select-list">Select an option:</label>
+    <select id="select-list" name="select-option">
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+
+    <fieldset>
+      <legend>Additional Information</legend>
+      <label for="textarea">Message:</label>
+      <textarea id="textarea" name="message" rows="4" cols="50"></textarea>
+    </fieldset>
+  </form>
+</body>
+</html>
